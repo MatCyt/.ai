@@ -1,5 +1,7 @@
+
 <TASK>
 Describe exactly what you want the model to do.
+[IF ASKING FOR RECOMMENDATION: ASK FOR DIFFERENT OPTIONS, NOT FOR THE BEST ONE]
 </TASK>
 
 <CONTEXT>
@@ -14,7 +16,7 @@ Only include information necessary to complete the task.
 - Formatting rules
 </CONSTRAINTS>
 
-<OUTPUT_FORMAT>
+<OUTPUT_FORMAT>  
 - Specify exactly how the output should be structured.
 - Specify is a mrkd file should be generated as a result of the conversation
 Examples:
