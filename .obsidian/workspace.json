@@ -11,10 +11,10 @@
             "id": "5415956f124a4894",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -170,14 +170,22 @@
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "5415956f124a4894",
+  "active": "1d68b69af6451ed5",
   "lastOpenFiles": [
+    "Untitled.md",
+    "Untitled.base",
+    "TEST/sdsds.base",
+    "2026-03-14.md",
+    "prompts-lib/web-dev-framework/m3-prod-ready/05-logout-functionality-implementation.md",
+    "prompts-lib/api_creation/rest_api_plan.md",
+    "TEST/Untitled.canvas",
+    "TEST",
     "prompts-lib/meta/improve_prompt.md",
     "prompts-lib/meta",
     "prompts-lib/generic/generic.md",

@@ -1,5 +1,5 @@
 <TASK>
-Explain how [JWT (JSON Web Tokens)] work for authentication.
+Explain how [ABC] work.
 
 Structure your explanation as:
 1. What problem JWTs solve
@@ -7,6 +7,6 @@ Structure your explanation as:
 3. The authentication flow
 4. Common security considerations
 
-Target audience: Backend developers new to authentication.
+Target audience: [Backend developers new to authentication].
 </TASK>
 
