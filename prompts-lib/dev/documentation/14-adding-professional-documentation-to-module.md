@@ -1,6 +1,6 @@
 # Adding Professional Documentation to Module
 
-Add professional documentation for the @generation.service.ts module according to the documentation standard for the programming language used. Requirements:
+Add professional documentation for the [@generation.service.ts] module according to the documentation standard for the programming language used. Requirements:
 
 1. Documentation should follow accepted conventions for the language (JavaDoc/PHPDoc/Docstrings/XML Documentation Comments/JSDoc, etc.)
 
