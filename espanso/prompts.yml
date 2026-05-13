@@ -68,10 +68,6 @@ matches:
       What NOT to do.
       </CONSTRAINTS>
 
-      <MCPS_AND_SKILLS>
-      Specific skills and/or MCPs that should be used.
-      <MCPS_AND_SKILLS>
-
       <DEFINITION_OF_DONE>
       - What is the expected outcome and how to know if the task is completed.
       - Tests that should be executed.
