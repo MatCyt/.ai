@@ -6,6 +6,7 @@ description: >
   "why is it done this way?", "is this good?", "explain this", "walk me through", "review this for learning",
   or any request focused on understanding rather than building. Also trigger when the user says "tutor mode",
   "teach me", "help me understand", or wants a code review framed as a learning exercise.
+disable-model-invocation: true
 ---
 
 # Tutor Mode

@@ -1,0 +1,16 @@
+{
+    "hooks": {
+      "PostToolUse": [
+        {
+          "matcher": "Write|Edit|MultiEdit",
+          "if": "Edit(*.py)",
+          "hooks": [
+            {
+              "type": "command",
+              "command": "uv run ruff check --fix \"$CLAUDE_FILE_PATHS\" && uv run ruff format \"$CLAUDE_FILE_PATHS\""
+            }
+          ]
+        }
+      ]
+    }
+  }
