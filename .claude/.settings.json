@@ -1,16 +1,15 @@
 {
-    "hooks": {
-      "PostToolUse": [
-        {
-          "matcher": "Write|Edit|MultiEdit",
-          "if": "Edit(*.py)",
-          "hooks": [
-            {
-              "type": "command",
-              "command": "uv run ruff check --fix \"$CLAUDE_FILE_PATHS\" && uv run ruff format \"$CLAUDE_FILE_PATHS\""
-            }
-          ]
-        }
-      ]
-    }
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c 'FILE=$(cat | jq -r \".tool_input.file_path // empty\"); [[ \"$FILE\" != *.py ]] && exit 0; cd \"${CLAUDE_PROJECT_DIR}\" || exit 0; uv run ruff check --fix \"$FILE\" >/dev/null 2>&1; uv run ruff format \"$FILE\" >/dev/null 2>&1; OUTPUT=$(uv run ruff check \"$FILE\" 2>&1); if [ $? -ne 0 ]; then echo \"$OUTPUT\" >&2; exit 2; fi; exit 0'"
+          }
+        ]
+      }
+    ]
   }
+}
