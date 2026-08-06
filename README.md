@@ -13,3 +13,5 @@ ai/
 ├── espanso/          # Text-expansion snippets for prompts
 └── .claude/          # claude specific (hooks)
 ```
+
+___
