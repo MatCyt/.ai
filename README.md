@@ -1,6 +1,6 @@
 # ai
 
-Personal collection of prompts, Claude Code skills, agent configurations, and AI tooling. Everything lives here so it can be versioned, iterated on, and reused across projects.
+Personal collection of AI tooling, mainly own skills and saved prompts, to be reused across projects.
 
 ---
 
