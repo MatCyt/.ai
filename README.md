@@ -10,8 +10,6 @@ Personal collection of prompts, Claude Code skills, agent configurations, and AI
 ai/
 ├── skills/           # agentic skills (slash commands)
 ├── prompts-lib/      # reusable prompt templates
-├── espanso/          # Text-expansion snippets for prompts
-└── .claude/          # claude specific (hooks)
 ```
 
 ___
