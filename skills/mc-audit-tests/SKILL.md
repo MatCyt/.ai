@@ -1,5 +1,5 @@
 ---
-name: audit-tests
+name: mc-audit-tests
 description: Deep, adversarial audit of pytest unit tests. Audits test adequacy and depth — which behaviors are actually verified vs merely executed — and produces a TEST_AUDIT.md report. Strictly read-only with respect to the repository; never modifies, repairs, or adds code or tests.
 disable-model-invocation: true
 user-invocable: true

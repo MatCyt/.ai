@@ -1,5 +1,5 @@
 ---
-name: to-task
+name: mc-to-task
 description: Capture a current conversation into a task for another agent to pick up.
 disable-model-invocation: true
 user-invocable: true

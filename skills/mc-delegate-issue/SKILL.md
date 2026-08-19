@@ -1,5 +1,5 @@
 ---
-name: delegate-issue
+name: mc-delegate-issue
 description: >-
   Autonomously execute one issue from a .scratch/<feature>/ plan: fresh worktree,
   implement within scope, verify, self-review, commit, push, open a PR. User-invoked
@@ -9,7 +9,7 @@ user-invocable: true
 argument-hint: "[mandatory: path to the issue file]"
 ---
 
-# delegate-issue — one issue → one PR
+# mc-delegate-issue — one issue → one PR
 
 ## Process
 
@@ -46,7 +46,7 @@ Does not pass → fix within scope, or stop and report. Never PR red.
 
 ### 5. Self-review
 
-Run the code-review skill on the diff. Address its findings within the issue's scope;
+Run the mc-code-review skill on the diff. Address its findings within the issue's scope;
 findings out of scope go in the PR description, not the code.
 
 ### 6. Deliver

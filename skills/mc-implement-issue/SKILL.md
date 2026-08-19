@@ -1,5 +1,5 @@
 ---
-name: implement-issue
+name: mc-implement-issue
 description: >-
   Implement exactly one issue, then stop at the review gate without committing. 
 disable-model-invocation: true

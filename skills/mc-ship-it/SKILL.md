@@ -1,5 +1,5 @@
 ---
-name: ship-it
+name: mc-ship-it
 description: Finalize implemented work into a clean local commit — sanity-check the working tree, run precommit and fix issues until clean, stage everything, and write a disciplined commit message. Use whenever the user says "ship it", "commit this", "finalize the feature", "wrap this up", or asks to commit completed work, even if they don't name this skill. Optionally takes a spec (inline text or a file path) describing the intent behind the change.
 ---
 

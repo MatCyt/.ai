@@ -1,5 +1,5 @@
 ---
-name: explain-visually
+name: mc-explain-visually
 description: "Create a beautiful HTML explanation of a repo, spec, PR, architecture, or concept so a smart beginner can understand and retell it."
 user-invocable: true
 argument-hint: "<repo, spec, PR, architecture, concept, or source material>"

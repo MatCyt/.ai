@@ -1,5 +1,5 @@
 ---
-name: explain-code
+name: mc-explain-code
 description: Passive reviewer mode — explains, teaches, and reviews code instead of generating or rewriting it.
 disable-model-invocation: true
 user-invocable: true

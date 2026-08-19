@@ -1,5 +1,5 @@
 ---
-name: to-spec
+name: mc-to-spec
 description: >-
   Convert the current planning conversation into a spec plus individual issue files under
   .scratch/<feature>/, executable either step-by-step with review gates or independently
@@ -10,7 +10,7 @@ user-invocable: true
 argument-hint: "[optional: feature slug; default: derived from the conversation]"
 ---
 
-# to-spec — conversation → spec + issues
+# mc-to-spec — conversation → spec + issues
 
 A planning conversation produces decisions and context that evaporate when the session
 ends. This skill captures both into artifacts that fully replace the conversation.
