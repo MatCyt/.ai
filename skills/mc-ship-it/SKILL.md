@@ -1,15 +1,11 @@
 ---
 name: mc-ship-it
-description: Finalize implemented work into a clean local commit — sanity-check the working tree, run precommit and fix issues until clean, stage everything, and write a disciplined commit message. Use whenever the user says "ship it", "commit this", "finalize the feature", "wrap this up", or asks to commit completed work, even if they don't name this skill. Optionally takes a spec (inline text or a file path) describing the intent behind the change.
+description: Finalize implemented work into a clean local commit — sanity-check the working tree, run precommit and fix issues until clean, stage everything, and commit with a clear one-line message. Use whenever the user says "ship it", "commit this", "finalize the feature", "wrap this up", or asks to commit completed work, even if they don't name this skill.
 ---
 
 # Ship It
 
 Finalize the current work into a clean local commit. The user has already reviewed their changes before invoking this skill — your job is mechanical finalization, not code review. The scope ends at a clean local commit: never push.
-
-## Optional input: a spec
-
-The user may pass a spec — inline text, a file path, or a pointer to earlier conversation — describing the intent behind the change. Its only use is the commit body's "why". Without a spec, never guess or infer intent; describe only what changed.
 
 ## Workflow
 
@@ -37,15 +33,9 @@ Re-run after fixing: formatters and autofixes create new diffs, and a fix can it
 
 `git add -A` once the sanity check and precommit both pass.
 
-### 4. Compose the commit message
+### 4. Write a one-line commit message
 
-**Subject line:** imperative mood, concise, specific enough that `git log --oneline` tells the story.
-
-**Body — only when the change is big or meaningful.** For small changes (a config tweak, a one-liner, a rename), the subject line alone is the right commit; a body there is noise. When a body is warranted, keep it short:
-
-- **With a spec:** write the "why" — the intent behind the change — in at most 3–4 sentences.
-- **Without a spec:** briefly describe *what* changed, never *why*. Intent that isn't stated isn't yours to invent.
-- **Multiple meaningful files:** add a one-line summary per file.
+The commit message is a single subject line — no body, no bullet list, no trailers. Imperative mood, concise, specific enough that `git log --oneline` tells the story. Describe what changed; never invent intent that wasn't stated.
 
 ### 5. No self-attribution
 
@@ -53,35 +43,12 @@ Never state or imply, anywhere, that the change was made by an AI or coding agen
 
 ### 6. Commit and verify
 
-Run `git commit`. Hooks run again at commit time and can fail or modify files — do not assume success. If hooks modified files, stage the modifications and amend (or re-commit). Confirm with `git log -1` and a clean `git status`, then report the final subject line and state.
+Run `git commit -m "<subject>"`. Hooks run again at commit time and can fail or modify files — do not assume success. If hooks modified files, stage the modifications and amend (or re-commit). Confirm with `git log -1` and a clean `git status`, then report the final subject line and state.
 
 ## Examples
 
-**Small change — subject only:**
-
 ```
 Increase scraper request timeout to 30s
-```
-
-**Meaningful change, spec provided — body carries the why:**
-
-```
 Add retry with backoff to the fetch pipeline
-
-Transient 429s from career sites were killing full scrape runs.
-Retrying with exponential backoff lets a run survive rate limiting
-without manual restarts.
-
-- scraper/fetch.py: wrap requests in retry decorator
-- scraper/config.py: new RETRY_LIMIT and BACKOFF_BASE settings
-```
-
-**Meaningful change, no spec — what changed, never why:**
-
-```
 Split parser into per-site modules
-
-- parsers/base.py: shared extraction helpers moved here
-- parsers/lever.py, parsers/greenhouse.py: site-specific logic split out
-- tests/test_parsers.py: imports updated for the new layout
 ```
