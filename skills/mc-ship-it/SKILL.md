@@ -35,7 +35,7 @@ Re-run after fixing: formatters and autofixes create new diffs, and a fix can it
 
 ### 4. Write a one-line commit message
 
-The commit message is a single subject line — no body, no bullet list, no trailers. Imperative mood, concise, specific enough that `git log --oneline` tells the story. Describe what changed; never invent intent that wasn't stated.
+The commit message is a single subject line — no body, no bullet list, no trailers. Imperative mood, concise, specific enough that `git log --oneline` tells the story. Describe what changed; never invent intent that wasn't stated. Follow best commit message practices.
 
 ### 5. No self-attribution
 
@@ -43,7 +43,7 @@ Never state or imply, anywhere, that the change was made by an AI or coding agen
 
 ### 6. Commit and verify
 
-Run `git commit -m "<subject>"`. Hooks run again at commit time and can fail or modify files — do not assume success. If hooks modified files, stage the modifications and amend (or re-commit). Confirm with `git log -1` and a clean `git status`, then report the final subject line and state.
+Run `git commit -m "<subject>"`. Hooks run again at commit time and can fail or modify files — do not assume success. If hooks modified files, stage the modifications and amend (or re-commit). Confirm with `git log -1` and a clean `git status`, then report the final subject line and state. This is review feedback sentence.
 
 ## Examples
 
